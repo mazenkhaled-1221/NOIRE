@@ -141,7 +141,7 @@ export default async function handler(req, res) {
 
                     amount: amount,
 
-                    currency: "USD",
+                    currency: "EGP",
 
                     payment_methods: [
                         Number(PAYMOB_INTEGRATION_ID)
@@ -253,7 +253,7 @@ export default async function handler(req, res) {
          * ============================
          */
 
-        const checkoutUrl =
+      const checkoutUrl =
     "https://accept.paymob.com/unifiedcheckout/" +
     "?publicKey=" +
     encodeURIComponent(PAYMOB_PUBLIC_KEY) +
@@ -263,8 +263,7 @@ export default async function handler(req, res) {
 return res.status(200).json({
     success: true,
     orderNumber,
-    clientSecret: data.client_secret
-
+    checkoutUrl
 });
 
 

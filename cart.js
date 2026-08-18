@@ -279,7 +279,7 @@ checkoutForm?.addEventListener(
 
             const response =
                 await fetch(
-                    "/api/create-payment",
+                    "/create-payment",
                     {
 
                         method: "POST",
@@ -301,12 +301,11 @@ checkoutForm?.addEventListener(
 
                             city,
 
-                            items: cart
+                            items: getCart()
 
                         })
 
-                    }
-                );
+        });
 
 
             const data =
@@ -320,7 +319,7 @@ checkoutForm?.addEventListener(
 
                 throw new Error(
                     data.message ||
-                    "Unable to initialize payment."
+                    "payment initialize failed ."
                 );
 
             }
