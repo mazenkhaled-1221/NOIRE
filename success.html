@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Order Confirmed — NOIRÉ</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+    <main class="payment-result">
+
+        <div class="payment-result-inner">
+
+            <span class="payment-icon">
+                ✓
+            </span>
+
+            <p class="section-label">
+                NOIRÉ / PAYMENT
+            </p>
+
+            <h1>
+                Order
+                <em>Confirmed.</em>
+            </h1>
+
+            <p>
+                Thank you for your order.
+                Your payment is being processed
+                and we'll take care of the rest.
+            </p>
+
+            <div
+                class="order-number"
+                id="orderNumber">
+            </div>
+
+            <a
+                href="shop.html"
+                class="hero-btn">
+
+                Continue Shopping
+                <span>↗️</span>
+
+            </a>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        const order =
+            JSON.parse(
+                localStorage.getItem(
+                    "noirePendingOrder"
+                )
+            );
+
+        if (order) {
+
+            document.getElementById(
+                "orderNumber"
+            ).textContent =
+                "ORDER " +
+                order.orderNumber;
+
+        }
+
+    </script>
+
+</body>
+
+</html>

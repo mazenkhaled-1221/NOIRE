@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Shop NOIRÉ — modern luxury clothing, essentials and accessories.">
+
+    <title>Shop — NOIRÉ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header" id="header">
+
+        <a href="index.html" class="logo">
+            NOIRÉ
+        </a>
+
+        <nav class="nav">
+
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="index.html#collections">Collections</a>
+            <a href="index.html#story">Our Story</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="icon-btn" id="searchBtn">
+                ⌕
+            </button>
+
+            <button class="cart-btn" id="cartBtn">
+                <span>Bag</span>
+                <small id="cart-count">0</small>
+            </button>
+
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </header>
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-menu-inner">
+
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="index.html#collections">Collections</a>
+            <a href="index.html#story">Our Story</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= SHOP HERO ================= -->
+
+    <section class="shop-hero">
+
+        <div>
+
+            <p class="section-label">
+                NOIRÉ / COLLECTION 01
+            </p>
+
+            <h1>
+                THE<br>
+                <em>COLLECTION.</em>
+            </h1>
+
+            <p>
+                Discover pieces designed around
+                confidence, simplicity and individuality.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SHOP ================= -->
+
+    <main class="shop-page">
+
+        <div class="shop-toolbar">
+
+            <div class="shop-categories">
+
+                <button class="filter-btn active"
+                    data-category="all">
+                    All
+                </button>
+
+                <button class="filter-btn"
+                    data-category="men">
+                    Men
+                </button>
+
+                <button class="filter-btn"
+                    data-category="women">
+                    Women
+                </button>
+
+                <button class="filter-btn"
+                    data-category="accessories">
+                    Accessories
+                </button>
+
+            </div>
+
+
+            <div class="shop-tools">
+
+                <button id="searchBtn2">
+                    Search
+                </button>
+
+                <select id="sortProducts">
+
+                    <option value="default">
+                        Sort
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= SEARCH ================= -->
+
+        <div class="shop-search" id="shopSearch">
+
+            <input
+                type="text"
+                id="productSearch"
+                placeholder="Search products..."
+            >
+
+            <button id="closeSearch">
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section class="shop-products"
+            id="shopProducts">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article class="shop-product"
+                data-category="men"
+                data-price="49"
+                data-name="Essential Oversized Tee">
+
+                <a href="product.html?id=tee">
+
+                    <div class="shop-product-image shop-img-1">
+
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+                        <span class="product-badge">
+                            NEW
+                        </span>
+
+                        <span class="quick-view">
+                            VIEW
+                        </span>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Essential Oversized Tee
+                            </h2>
+
+                            <p>
+                                Heavy Cotton
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $49
+                        </strong>
+
+                    </div>
+
+                </a>
+
+                <button class="shop-add"
+                    data-product-id="tee">
+
+                    Add to Bag
+
+                </button>
+
+            </article>
+
+
+            <!-- PRODUCT 2 -->
+
+            <article class="shop-product"
+                data-category="men"
+                data-price="129"
+                data-name="Structured Denim Jacket">
+
+                <a href="product.html?id=denim">
+
+                    <div class="shop-product-image shop-img-2">
+
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+                        <span class="quick-view">
+                            VIEW
+                        </span>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Structured Denim Jacket
+                            </h2>
+
+                            <p>
+                                Premium Denim
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $129
+                        </strong>
+
+                    </div>
+
+                </a>
+
+                <button class="shop-add"
+                    data-product-id="denim">
+
+                    Add to Bag
+
+                </button>
+
+            </article>
+
+
+            <!-- PRODUCT 3 -->
+
+            <article class="shop-product"
+                data-category="women"
+                data-price="189"
+                data-name="Minimal Wool Coat">
+
+                <a href="product.html?id=coat">
+
+                    <div class="shop-product-image shop-img-3">
+
+                    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+                        <span class="quick-view">
+                            VIEW
+                        </span>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Minimal Wool Coat
+                            </h2>
+
+                            <p>
+                                Italian Wool
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $189
+                        </strong>
+
+                    </div>
+
+                </a>
+
+                <button class="shop-add"
+                    data-product-id="coat">
+
+                    Add to Bag
+
+                </button>
+
+            </article>
+
+
+            <!-- PRODUCT 4 -->
+
+            <article class="shop-product"
+                data-category="accessories"
+                data-price="149"
+                data-name="Classic Leather Bag">
+
+                <a href="product.html?id=bag">
+
+                    <div class="shop-product-image shop-img-4">
+
+                     <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>   
+
+                        <span class="quick-view">
+                            VIEW
+                        </span>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Classic Leather Bag
+                            </h2>
+
+                            <p>
+                                Genuine Leather
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $149
+                        </strong>
+
+                    </div>
+
+                </a>
+
+                <button class="shop-add"
+                    data-product-id="bag">
+
+                    Add to Bag
+
+                </button>
+
+            </article>
+
+
+            <!-- PRODUCT 5 -->
+
+            <article class="shop-product"
+                data-category="women"
+                data-price="79"
+                data-name="Silk Essential Shirt">
+
+                <a href="product.html?id=shirt">
+
+                    <div class="shop-product-image shop-img-5">
+
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+                        <span class="product-badge">
+                            NEW
+                        </span>
+
+                        <span class="quick-view">
+                            VIEW
+                        </span>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Silk Essential Shirt
+                            </h2>
+
+                            <p>
+                                Premium Silk
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $79
+                        </strong>
+
+                    </div>
+
+                </a>
+
+                <button class="shop-add"
+                    data-product-id="shirt">
+
+                    Add to Bag
+
+                </button>
+
+            </article>
+
+
+            <!-- PRODUCT 6 -->
+
+            <article class="shop-product"
+                data-category="men"
+                data-price="99"
+                data-name="Relaxed Tailored Pants">
+
+                <a href="product.html?id=pants">
+
+                    <div class="shop-product-image shop-img-6">
+
+                        <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+                        <span class="quick-view">
+                            VIEW
+                        </span>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Relaxed Tailored Pants
+                            </h2>
+
+                            <p>
+                                Premium Cotton
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $99
+                        </strong>
+
+                    </div>
+
+                </a>
+
+                <button class="shop-add"
+                    data-product-id="pants">
+
+                    Add to Bag
+
+                </button>
+
+            </article>
+
+
+            <!-- PRODUCT 7 -->
+
+            <article class="shop-product"
+                data-category="women"
+                data-price="119"
+                data-name="Modern Knit Dress">
+
+                <a href="product.html?id=dress">
+
+                    <div class="shop-product-image shop-img-7">
+
+                    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+                        <span class="quick-view">
+                            VIEW
+                        </span>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Modern Knit Dress
+                            </h2>
+
+                            <p>
+                                Soft Knit
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $119
+                        </strong>
+
+                    </div>
+
+                </a>
+
+                <button class="shop-add"
+                    data-product-id="dress">
+
+                    Add to Bag
+
+                </button>
+
+            </article>
+
+
+            <!-- PRODUCT 8 -->
+
+            <article class="shop-product"
+                data-category="accessories"
+                data-price="59"
+                data-name="Minimal Leather Belt">
+
+                <a href="product.html?id=belt">
+
+                    <div class="shop-product-image shop-img-8">
+
+                    <button class="wishlist-btn" aria-label="Add to wishlist">♡</button>
+
+                        <span class="quick-view">
+                            VIEW
+                        </span>
+
+                    </div>
+
+                    <div class="shop-product-info">
+
+                        <div>
+
+                            <h2>
+                                Minimal Leather Belt
+                            </h2>
+
+                            <p>
+                                Genuine Leather
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $59
+                        </strong>
+
+                    </div>
+
+                </a>
+
+                <button class="shop-add"
+                    data-product-id="belt">
+
+                    Add to Bag
+
+                </button>
+
+            </article>
+
+        </section>
+
+
+        <p class="no-products" id="noProducts">
+            No products found.
+        </p>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    NOIRÉ
+                </a>
+
+                <p>
+                    Modern fashion for<br>
+                    timeless individuals.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>EXPLORE</h4>
+
+                <a href="shop.html">Shop</a>
+                <a href="index.html#collections">
+                    Collections
+                </a>
+                <a href="index.html#story">
+                    Our Story
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>HELP</h4>
+
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Contact</a>
+
+            </div>
+
+
+            <div class="footer-newsletter">
+
+                <h4>
+                    STAY IN THE LOOP
+                </h4>
+
+                <p>
+                    Subscribe for new drops,
+                    exclusive access and more.
+                </p>
+
+                <form>
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button type="submit">
+                        →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 NOIRÉ. ALL RIGHTS RESERVED.
+            </span>
+
+            <div>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- CART OVERLAY -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- CART DRAWER -->
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <div>
+            <p>YOUR SELECTION</p>
+            <h2>Your Bag</h2>
+        </div>
+
+        <button id="closeCart" class="close-cart">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems">
+        <!-- JS -->
+    </div>
+
+
+    <div class="cart-empty" id="cartEmpty">
+
+        <div class="empty-icon">
+            ✦
+        </div>
+
+        <h3>Your bag is empty</h3>
+
+        <p>
+            Discover pieces designed
+            for timeless individuals.
+        </p>
+
+        <a href="shop.html">
+            EXPLORE COLLECTION
+        </a>
+
+    </div>
+
+
+    <div class="cart-bottom" id="cartBottom">
+
+        <div class="cart-subtotal">
+
+            <span>SUBTOTAL</span>
+
+            <strong id="cartSubtotal">
+                $0
+            </strong>
+
+        </div>
+
+        <p class="cart-note">
+            Shipping calculated at checkout.
+        </p>
+
+        <button class="checkout-btn">
+            CHECKOUT
+            <span>→</span>
+        </button>
+
+        <button class="continue-shopping" id="continueShopping">
+            CONTINUE SHOPPING
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- CHECKOUT MODAL -->
+
+<div class="checkout-overlay" id="checkoutOverlay">
+
+    <div class="checkout-modal">
+
+        <button
+            class="checkout-close"
+            id="checkoutClose">
+            ×
+        </button>
+
+        <div class="checkout-title">
+
+            <span>NOIRÉ / CHECKOUT</span>
+
+            <h2>Complete Your Order</h2>
+
+            <p>
+                Almost yours. Complete your details
+                and we'll take care of the rest.
+            </p>
+
+        </div>
+
+
+        <div class="checkout-layout">
+
+            <!-- FORM -->
+
+            <form id="checkoutForm">
+
+                <div class="checkout-field">
+
+                    <label>FULL NAME</label>
+
+                    <input
+                        type="text"
+                        id="customerName"
+                        placeholder="Your full name"
+                        required>
+
+                </div>
+
+
+                <div class="checkout-row">
+
+                    <div class="checkout-field">
+
+                        <label>PHONE</label>
+
+                        <input
+                            type="tel"
+                            id="customerPhone"
+                            placeholder="+20"
+                            required>
+
+                    </div>
+
+
+                    <div class="checkout-field">
+
+                        <label>EMAIL</label>
+
+                        <input
+                            type="email"
+                            id="customerEmail"
+                            placeholder="you@email.com"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="checkout-field">
+
+                    <label>ADDRESS</label>
+
+                    <input
+                        type="text"
+                        id="customerAddress"
+                        placeholder="Street / Building / Apartment"
+                        required>
+
+                </div>
+
+
+                <div class="checkout-row">
+
+                    <div class="checkout-field">
+
+                        <label>CITY</label>
+
+                        <input
+                            type="text"
+                            id="customerCity"
+                            placeholder="Cairo"
+                            required>
+
+                    </div>
+
+
+                    <div class="checkout-field">
+
+                        <label>COUNTRY</label>
+
+                        <input
+                            type="text"
+                            value="Egypt"
+                            readonly>
+
+                    </div>
+
+                </div>
+
+
+                <div class="checkout-field">
+
+                    <label>ORDER NOTES</label>
+
+                    <textarea
+                        id="orderNotes"
+                        placeholder="Anything we should know?"></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="place-order-btn">
+
+                    <span>PAY NOW</span>
+
+                    <strong>→</strong>
+
+                </button>
+
+            </form>
+
+
+            <!-- SUMMARY -->
+
+            <div class="checkout-summary">
+
+                <span class="summary-label">
+                    YOUR SELECTION
+                </span>
+
+                <h3>Order Summary</h3>
+
+                <div
+                    id="checkoutSummaryItems"
+                    class="checkout-summary-items">
+                </div>
+
+
+                <div class="summary-total">
+
+                    <span>TOTAL</span>
+
+                    <strong id="checkoutTotal">
+                        $0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/cart.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="NOIRÉ product details — premium fashion designed for timeless individuals.">
+
+    <title>Product — NOIRÉ</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header" id="header">
+
+        <a href="index.html" class="logo">
+            NOIRÉ
+        </a>
+
+
+        <nav class="nav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html" class="active">
+                Shop
+            </a>
+
+            <a href="index.html#collections">
+                Collections
+            </a>
+
+            <a href="index.html#story">
+                Our Story
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <button class="icon-btn">
+                ⌕
+            </button>
+
+            <button class="cart-btn" id="cart-Btn">
+
+                <span>Bag</span>
+
+                <small id="cart-count">
+                    0
+                </small>
+
+            </button>
+
+        </div>
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn">
+
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </header>
+
+
+
+    <!-- ================= MOBILE MENU ================= -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu">
+
+        <div class="mobile-menu-inner">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <a href="index.html#collections">
+                Collections
+            </a>
+
+            <a href="index.html#story">
+                Our Story
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= PRODUCT ================= -->
+
+    <main class="product-page">
+
+
+        <!-- ================= BREADCRUMB ================= -->
+
+        <div class="product-breadcrumb">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <span>/</span>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <span>/</span>
+
+            <strong id="breadcrumbProduct">
+                Product
+            </strong>
+
+        </div>
+
+
+
+        <!-- ================= PRODUCT MAIN ================= -->
+
+        <section class="product-main">
+
+
+            <!-- ================= GALLERY ================= -->
+
+            <div class="product-gallery">
+
+
+                <div
+                    class="product-main-image"
+                    id="mainProductImage">
+
+                    <span
+                        class="product-image-number"
+                        id="imageNumber">
+
+                        01 / 04
+
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="product-thumbnails"
+                    id="productThumbnails">
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= INFO ================= -->
+
+            <div class="product-details">
+
+
+                <p
+                    class="product-category"
+                    id="productCategory">
+
+                    COLLECTION 01
+
+                </p>
+
+
+                <h1 id="productTitle">
+                    Essential Oversized Tee
+                </h1>
+                <button class="product-wishlist" id="productWishlist" type="button" aria-label="Add to wishlist">
+                    
+                    ♡ </button>
+
+                <div class="product-rating">
+
+                    <span>
+                        ★★★★★
+                    </span>
+
+                    <small>
+                        4.9 / 5 — 128 Reviews
+                    </small>
+
+                </div>
+
+
+                <div
+                    class="product-price"
+                    id="productPrice">
+
+                    $49
+
+                </div>
+
+
+                <p
+                    class="product-description"
+                    id="productDescription">
+
+                    A refined everyday essential
+                    designed with a relaxed silhouette
+                    and premium heavyweight cotton.
+
+                </p>
+
+
+
+                <!-- ================= COLORS ================= -->
+
+                <div class="product-option">
+
+                    <div class="option-heading">
+
+                        <span>
+                            COLOR
+                        </span>
+
+                        <strong id="selectedColor">
+                            Black
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        class="color-options"
+                        id="colorOptions">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= SIZE ================= -->
+
+                <div class="product-option">
+
+                    <div class="option-heading">
+
+                        <span>
+                            SIZE
+                        </span>
+
+                        <a href="#">
+                            Size Guide
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="size-options"
+                        id="sizeOptions">
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= QUANTITY ================= -->
+
+                <div class="product-option">
+
+                    <div class="option-heading">
+
+                        <span>
+                            QUANTITY
+                        </span>
+
+                    </div>
+
+
+                    <div class="quantity-control">
+
+                        <button
+                            id="decreaseQty">
+
+                            −
+
+                        </button>
+
+
+                        <span id="quantity">
+                            1
+                        </span>
+
+
+                        <button
+                            id="increaseQty">
+
+                            +
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================= ADD ================= -->
+
+                <button
+                type="button"    
+                class="product-add"
+                    id="productAdd">
+
+                    <span>
+                        ADD TO BAG
+                    </span>
+
+                    <strong id="addPrice">
+                        $49
+                    </strong>
+
+                </button>
+
+
+
+                <!-- ================= BENEFITS ================= -->
+
+                <div class="product-benefits">
+
+                    <div>
+
+                        <span>
+                            ✦
+                        </span>
+
+                        <p>
+                            Premium quality materials
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ✦
+                        </span>
+
+                        <p>
+                            Fast worldwide shipping
+                        </p>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ✦
+                        </span>
+
+                        <p>
+                            Easy returns within 14 days
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PRODUCT DESCRIPTION ================= -->
+
+        <section class="product-story">
+
+
+            <div>
+
+                <p class="section-label">
+                    THE DETAILS
+                </p>
+
+                <h2>
+                    Designed<br>
+                    <em>with intention.</em>
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <p>
+                    Every NOIRÉ piece is designed around
+                    simplicity, comfort and character.
+                    We focus on refined silhouettes and
+                    carefully selected materials to create
+                    pieces that remain relevant beyond
+                    seasonal trends.
+                </p>
+
+
+                <div class="detail-list">
+
+                    <div>
+
+                        <span>
+                            MATERIAL
+                        </span>
+
+                        <strong>
+                            100% Premium Cotton
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            FIT
+                        </span>
+
+                        <strong>
+                            Relaxed / Oversized
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            CARE
+                        </span>
+
+                        <strong>
+                            Machine Wash Cold
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= RELATED ================= -->
+
+        <section class="related-products">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        COMPLETE THE LOOK
+                    </p>
+
+                    <h2>
+                        You May Also Like
+                    </h2>
+
+                </div>
+
+                <a
+                    href="shop.html"
+                    class="text-link">
+
+                    View All
+                    <span>↗</span>
+
+                </a>
+
+            </div>
+
+
+            <div
+                class="products-grid"
+                id="relatedProducts">
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+
+            <div class="footer-brand">
+
+                <a
+                    href="index.html"
+                    class="logo">
+
+                    NOIRÉ
+
+                </a>
+
+                <p>
+                    Modern fashion for<br>
+                    timeless individuals.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    EXPLORE
+                </h4>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <a href="index.html#collections">
+                    Collections
+                </a>
+
+                <a href="index.html#story">
+                    Our Story
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    HELP
+                </h4>
+
+                <a href="#">
+                    Shipping
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-newsletter">
+
+                <h4>
+                    STAY IN THE LOOP
+                </h4>
+
+                <p>
+                    Subscribe for new drops,
+                    exclusive access and more.
+                </p>
+
+
+                <form>
+
+                    <input
+                        type="email"
+                        placeholder="Your email address"
+                        required
+                    >
+
+                    <button>
+                        →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 NOIRÉ. ALL RIGHTS RESERVED.
+            </span>
+
+
+            <div>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- CART OVERLAY -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- CART DRAWER -->
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <div>
+            <p>YOUR SELECTION</p>
+            <h2>Your Bag</h2>
+        </div>
+
+        <button id="closeCart" class="close-cart">
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems">
+        <!-- JS -->
+    </div>
+
+
+    <div class="cart-empty" id="cartEmpty">
+
+        <div class="empty-icon">
+            ✦
+        </div>
+
+        <h3>Your bag is empty</h3>
+
+        <p>
+            Discover pieces designed
+            for timeless individuals.
+        </p>
+
+        <a href="shop.html">
+            EXPLORE COLLECTION
+        </a>
+
+    </div>
+
+
+    <div class="cart-bottom" id="cartBottom">
+
+        <div class="cart-subtotal">
+
+            <span>SUBTOTAL</span>
+
+            <strong id="cartSubtotal">
+                $0
+            </strong>
+
+        </div>
+
+        <p class="cart-note">
+            Shipping calculated at checkout.
+        </p>
+
+        <button class="checkout-btn">
+            CHECKOUT
+            <span>→</span>
+        </button>
+
+        <button class="continue-shopping" id="continueShopping">
+            CONTINUE SHOPPING
+        </button>
+
+    </div>
+
+</aside>
+
+    <script src="js/cart.js"></script>
+    <script src="js/product.js"></script>
+
+</body>
+
+</html>
