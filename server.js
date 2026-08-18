@@ -43,7 +43,7 @@ app.use(
 ===================================================== */
 
 app.post(
-    "/api/create-payment",
+    "/create-payment",
     async (req, res) => {
 
         try {
